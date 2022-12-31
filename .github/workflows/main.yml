@@ -21,7 +21,7 @@ jobs:
 
 
       - name: "building to docker image"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/nginx-image .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/javaimage .
       
       - name: "docker push to docker hub"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/nginx-image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/javaimage
